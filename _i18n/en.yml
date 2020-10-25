@@ -1,13 +1,12 @@
 global:
   english: English
   malay: Malay
-navigations:
+pages:
   home: Home
   about: About
   features: Features
   pricing: Pricing
   getstarted: Get Started
-pages:
   section11: Finance & invoicing made easy for SME
   section11a: As a small business owner, you want to better manage your finance and transactions. Elona helps you to manage your invoices, accounts & smoothen your business operation.
   section11b: We received your message and you'll hear from us soon. Thank You!
@@ -55,5 +54,7 @@ pages:
   getintoucha: Contact us today for any enquiries you have so we can help your business
   getintouchb: We received your message and you'll hear from us soon. Thank You!
   getintouchc: Send Message
+  socialmedia: Social Media
+  socialmediaa: See below where you can find us.
 titles:
   index: Elona - Digital Business Platform

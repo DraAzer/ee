@@ -1,102 +1,8 @@
-<!DOCTYPE html>
-<html lang="zxx">
+---
+layout: page
+title: titles.index
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-
-    <title>Elona - Digital Business Platform</title>
-    
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-95V7Q935M9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-95V7Q935M9');
-	</script>
-	
-    <!-- Loading Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Loading Template CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
-    <link href="css/style-magnific-popup.css" rel="stylesheet">
-
-    <!-- Awsome Fonts -->
-    <link rel="stylesheet" href="css/all.min.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dosis:500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700" rel="stylesheet">
-
-    <!-- Font Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    
-</head>
-
-<body>
-
-    <!--begin header -->
-    <header class="header">
-
-        <!--begin navbar-fixed-top -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            
-            <!--begin container -->
-            <div class="container">
-
-                <!--begin navbar -->
-                <nav class="navbar navbar-expand-lg">
-
-                    <!--begin logo -->
-                    <a class="navbar-brand" href="#">Elona</a>
-                    <!--end logo -->
-
-                    <!--begin navbar-toggler -->
-                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-                    </button>
-                    <!--end navbar-toggler -->
-
-                    <!--begin navbar-collapse -->
-                    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-                        
-                        <!--begin navbar-nav -->
-                        <ul class="navbar-nav ml-auto">
-
-                            <li><a href="#home">Home</a></li>
-
-                            <li><a href="#about">About</a></li>
-
-                            <li><a href="#features">Features</a></li>
-
-                            <li><a href="#pricing">Pricing</a></li>
-
-                            <li class="discover-link"><a href="#" class="external discover-btn">Get Started</a></li>
-
-                        </ul>
-                        <!--end navbar-nav -->
-
-                    </div>
-                    <!--end navbar-collapse -->
-
-                </nav>
-                <!--end navbar -->
-
-            </div>
-    		<!--end container -->
-            
-        </nav>
-    	<!--end navbar-fixed-top -->
-        
-    </header>
-    <!--end header -->
 
     <!--begin home section -->
     <section class="home-section" id="home">
@@ -110,11 +16,9 @@
 	            <!--begin col-md-5-->
 	            <div class="col-md-5 padding-top-20">
 
-	          		<h1>Business app for SME</h1>
+	          		<h1>{% t pages.section11 %}</h1>
 
-	          		<p>You want to digitalize your business and give it an online presence. With Elona, you can do that and more with
-                          a fraction of price.
-                      </p>
+	          		<p>{% t pages.section11a %}</p>
 
 	        		<!--begin register-form-wrapper-->
                     <div class="register-form-wrapper wow bounceIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceIn;">
@@ -123,7 +27,7 @@
                         <div>
                              
                             <!--begin success message -->
-                            <p class="register_success_box" style="display:none;">We received your message and you'll hear from us soon. Thank You!</p>
+                            <p class="register_success_box" style="display:none;">{% t pages.section11b %}</p>
                             <!--end success message -->
                             
                             <!--begin register form -->
@@ -134,8 +38,8 @@
 
                                 <!-- <input class="register-input white-input" required="" name="register_phone" placeholder="Phone Number*" type="text"> -->
 
-                                <a href="https://app.elona.tech/Landing?utm_source=website&utm_medium=button&utm_campaign=register&utm_content=btn-register-submit">
-									<input value="Start using Elona" class="register-submit" type="button">
+                                <a href="https://app.elona.tech/Identity/Account/Register?utm_source=website&utm_medium=button&utm_campaign=register&utm_content=btn-register-submit&returnUrl=Home">
+									<input value="{% t pages.section12 %}" class="register-submit" type="button">
 								</a>
                             </form>
 							
@@ -175,9 +79,9 @@
                 <!--begin col-md-12 -->
                 <div class="col-md-12 text-center">
 
-                    <h2 class="section-title">Integrated solutions designed for SMEs</h2>
+                    <h2 class="section-title">{% t pages.section21 %}</h2>
 
-                    <p class="section-subtitle">Improve your operation and sales with easy to use features
+                    <p class="section-subtitle">{% t pages.section21a %}</p>
                     
                 </div>
                 <!--end col-md-12 -->
@@ -204,9 +108,9 @@
 
                             <img src="images/services-icon1.png" alt="pic">
 
-                            <h3>Operation</h3>
+                            <h3>{% t pages.section21b %}</h3>
 
-                            <p>No more manual processes and paperwork. Improve the efficiency of your internal processes and get things done fast with clear workflow</p>
+                            <p>{% t pages.section21bi %}</p>
                         </div>
 
                     </div>
@@ -219,9 +123,9 @@
 
                             <img src="images/services-icon2.png" alt="pic">
 
-                            <h3>Sales</h3>
+                            <h3>{% t pages.section21c %}</h3>
 
-                            <p>Create your online profile and allow yourself to be discovered by other vendors and customers. You can source items from other companies as well</p>
+                            <p>{% t pages.section21ci %}</p>
                             
                         </div>
 
@@ -235,9 +139,9 @@
 
                             <img src="images/services-icon3.png" alt="pic">
 
-                            <h3>Intelligence</h3>
+                            <h3>{% t pages.section21d %}</h3>
 
-                            <p>Want to get additional insights on your business? Forecast your sales, perform analytics and estimate best pricing point for your products with AI features</p>
+                            <p>{% t pages.section21di %}</p>
                             
                         </div>
 
@@ -268,12 +172,9 @@
                 <!--begin col-md-6 -->
                 <div class="col-md-6 margin-top-20">
 
-                    <h3>Start Digital Transformation Now</h4>
+                    <h3>{% t pages.section31 %}</h4>
 
-                    <p class="margin-bottom-40">Everyone is talking about the need for digital transformation. SMEs are having problems embracing this new
-                        paradigm as the cost of technology is still high and operating technology solutions is not their core business. Elona platform can solve 
-                        these common problems and let business owners be focused on things that matter
-                    </p>
+                    <p class="margin-bottom-40">{% t pages.section31a %}</p>
 
                     <div class="nav flex-column nav-pills margin-right-25" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
@@ -286,15 +187,15 @@
                                     <i class="fas fa-chart-line"></i>
                                 </div>
 
-                                <h4 class="margin-bottom-5">Automate your internal processes</h4>
+                                <h4 class="margin-bottom-5">{% t pages.section31b %}</h4>
 
-                                <p>Manage any process and be ready to address any challenge with total ease</p>
+                                <p>{% t pages.section3bi %}</p>
 
                             </div>
                             <!--end features-second-->
                         </a>
 
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
                             
                             <!--begin features-second-->
                             <div class="features-second">
@@ -303,16 +204,16 @@
                                     <i class="fas fa-network-wired"></i>
                                 </div>
 
-                                <h4 class="margin-bottom-5">Easy onboarding, fast adoption</h4>
+                                <h4 class="margin-bottom-5">{% t pages.section31c %}</h4>
 
-                                <p>Only use the features that you need and crucial for your business</p>
+                                <p>{% t pages.section31ci %}</p>
 
                             </div>
                             <!--end features-second-->
 
                         </a>
 
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        <a class="nav-link active" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                             
                             <!--begin features-second-->
                             <div class="features-second">
@@ -321,9 +222,9 @@
                                     <i class="fas fa-rocket"></i>
                                 </div>
 
-                                <h4 class="margin-bottom-5">Improve subscriber retention</h4>
+                                <h4 class="margin-bottom-5">{% t pages.section31d %}</h4>
 
-                                <p>Analyze customers by region, discounts and more and put a plan in place</p>
+                                <p>{% t pages.section31di %}</p>
 
                             </div>
                             <!--end features-second-->
@@ -378,9 +279,9 @@
                 <!--begin col-md-12-->
                 <div class="col-md-12 text-center padding-bottom-10">
 
-                    <h2 class="section-title">Amazing Features</h2>
+                    <h2 class="section-title">{% t pages.section41 %}</h2>
 
-                    <p class="section-subtitle">Communicate with flexible tools that go where your team goes</p>
+                    <p class="section-subtitle">{% t pages.section41a %}</p>
 
                 </div>
                 <!--end col-md-12 -->
@@ -398,9 +299,9 @@
 
                         <i class="fas fa-tachometer-alt"></i>
 
-                        <h4>Inventory Management</h4>
+                        <h4>{% t pages.section41b %}</h4>
 
-                        <p>Keep track of your stocks in an efficient way with all the information needed</p>
+                        <p>{% t pages.section41bi %}</p>
 
                     </div>
                 </div>
@@ -413,9 +314,9 @@
 
                         <i class="fas fa-chart-line"></i>
 
-                        <h4>Sales Order</h4>
+                        <h4>{% t pages.section41c %}</h4>
 
-                        <p>Perform transaction and monitor the sales order records that have been done</p>
+                        <p>P{% t pages.section41ci %}</p>
 
                     </div>
                 </div>
@@ -428,9 +329,9 @@
 
                         <i class="fas fa-bell"></i>
 
-                        <h4>Financial Report</h4>
+                        <h4>{% t pages.section41d %}</h4>
 
-                        <p>Get insights on your sales with various visual formats to have better understanding</p>
+                        <p>{% t pages.section41di %}</p>
 
                     </div>
                 </div>
@@ -449,9 +350,9 @@
 
                         <i class="fas fa-hand-holding-usd"></i>
 
-                        <h4>Directory Listing</h4>
+                        <h4>{% t pages.section41e %}</h4>
 
-                        <p>Enhance your company profile and get discovered by other vendors and customers</p>
+                        <p>{% t pages.section41ei %}</p>
 
                     </div>
                 </div>
@@ -464,9 +365,9 @@
 
                         <i class="fas fa-rocket"></i>
 
-                        <h4>Intelligent Insights</h4>
+                        <h4>{% t pages.section41f %}</h4>
 
-                        <p>Predict the trend and the pricing for your products and forecast your sales</p>
+                        <p>{% t pages.section41fi %}</p>
 
                     </div>
                 </div>
@@ -479,9 +380,9 @@
 
                         <i class="fab fa-rocketchat"></i>
 
-                        <h4>Mobile Friendly</h4>
+                        <h4>{% t pages.section41g %}</h4>
 
-                        <p>Convenient and easy to use mobile app so that you will always be in the know</p>
+                        <p>{% t pages.section41gi %}</p>
 
                     </div>
                 </div>
@@ -508,9 +409,9 @@
                 <!--begin col-md-12 -->
                 <div class="col-md-12 text-center padding-bottom-40">
 
-                    <h2 class="section-title">Pricing for every SMEs, at any stage</h2>
+                    <h2 class="section-title">{% t pages.section51 %}</h2>
 
-                    <p class="section-subtitle">All pricing packages are on monthly basis. You may contact us for annual invoicing</p>
+                    <!-- <p class="section-subtitle">All pricing packages are on monthly basis. You may contact us for annual invoicing</p> -->
                     
                 </div>
                 <!--end col-md-12 -->
@@ -531,9 +432,9 @@
                 <div class="row">
 
                     <!--begin col-md-4-->
-                    <div class="col-md-4">
+                    <div class="col-md-3">
 
-                        <div class="price-box">
+                        <!--<div class="price-box">
 
                             <ul class="pricing-list">
 
@@ -555,45 +456,44 @@
 
                             </ul>
 
-                        </div>
+                        </div>-->
 
                     </div>
                     <!--end col-md-4 -->
 
                     <!--begin col-md-4-->
-                    <div class="col-md-4">
+                    <div class="col-md-6">
 
                         <div class="price-box grey-price-box">
 
                             <ul class="pricing-list">
 
-                                <li class="price-title">BASIC</li>
+                                <li class="price-title">{% t pages.section51a %}</li>
 
-                                <li class="price-value">RM80</li>
+                                <li class="price-value">{% t pages.section51bi %}</li>
 
-                                <li class="price-subtitle">Per Month</li>
+                                <li class="price-subtitle">{% t pages.section51bii %}</li>
 
-                                <li class="price-text strong"><i class="fas fa-check blue"></i><strong>All FREE features</strong></li>
+                                <li class="price-text strong"><i class="fas fa-check blue"></i><strong>{% t pages.section51c %}</strong></li>
 
-                                <li class="price-text"><i class="fas fa-check blue"></i>Web application management</li>
+                                <li class="price-text"><i class="fas fa-check blue"></i>{% t pages.section51d %}</li>
 
-                                <li class="price-text"><i class="fas fa-check blue"></i>Operation and growth features</li>
+                                <li class="price-text"><i class="fas fa-check blue"></i>{% t pages.section51e %}</li>
 
-                                <li class="price-text"><i class="fas fa-check blue"></i>Basic AI capabilities</li>
+                                <li class="price-text"><i class="fas fa-check blue"></i>{% t pages.section51f %}</li>
 
-                                <li class="price-tag"><a href="https://app.elona.tech/Landing?subscription=BASIC&utm_source=website&utm_medium=button&utm_campaign=register&utm_content=btn-basic-tier">FREE 30-DAY TRIAL</a></li>
+                                <li class="price-tag"><a href="https://app.elona.tech/Identity/Account/Register?subscription=RM50&utm_source=website&utm_medium=button&utm_campaign=register&utm_content=btn-basic-tier&returnUrl=Home">{% t pages.section51g%}</a></li>
 
                             </ul>
-
                         </div>
 
                     </div>
                     <!--end col-md-4 -->
 
                     <!--begin col-md-4-->
-                    <div class="col-md-4">
+                    <div class="col-md-3">
 
-                        <div class="price-box">
+                        <!--<div class="price-box">
 
                             <ul class="pricing-list">
 
@@ -615,7 +515,7 @@
 
                             </ul>
 
-                        </div>
+                        </div>-->
 
                     </div>
                     <!--end col-md-4 -->
@@ -654,16 +554,16 @@
 
                     <div class="small-col-inside">
 
-                        <h3 class="margin-bottom-5">Get in touch</h3>
+                        <h3 class="margin-bottom-5">{% t pages.getintouch %}</h3>
 
-                        <p>Contact us today for any enquiries you have so we can help your business</p>
+                        <p>{% t pages.getintoucha %}</p>
 
                         <!--begin success message -->
-                        <p class="contact_success_box" style="display:none;">We received your message and you'll hear from us soon. Thank You!</p>
+                        <p class="contact_success_box" style="display:none;">{% t pages.getintouchb %}</p>
                         <!--end success message -->
                         
                         <!--begin contact form -->
-                        <form id="contact-form" class="contact" action="php/contact.php" method="post">
+                        <form id="contact-form" class="contact" action="https://formkeep.com/f/d161be43a3af" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
                         
                             <input class="contact-input white-input" required="" name="contact_names" placeholder="Full Name*" type="text">
 
@@ -673,7 +573,7 @@
 
                             <textarea class="contact-commnent white-input" rows="2" cols="20" name="contact_message" placeholder="Your Message..."></textarea>
 
-                            <input value="Send Message" id="submit-button" class="contact-submit" type="submit">
+                            <input value="{% t pages.getintouchc %}" id="submit-button" class="contact-submit" type="submit">
 
                         </form>
                         <!--end contact form -->
@@ -691,112 +591,3 @@
     
     </section>
     <!--end contact-->
-    
-    <!--begin footer -->
-    <div class="footer">
-            
-        <!--begin container -->
-        <div class="container-fluid px-0">
-        
-            <!--begin row -->
-            <div class="row no-gutters mx-0">
-            
-                <!--begin col-md-4 -->
-                <div class="col-md-6 footer-white-box text-center">
-                   
-                    <i class="pe-7s-map-2"></i>
-
-                    <h5>Get In Touch</h5>
-
-                    <p>WORQ Subang, Unit 2-1, Level 2, The Podium, Tower 3, UOA Business Park, 40150 Shah Alam</p>
-                    
-                    <p><a href="mailto:sales@elona.tech.com">sales@elona.tech</a></p>
-                    
-                    <p>+60149686534</p>
-                    
-                </div>
-                <!--end col-md-4 -->
-                
-                <!--begin col-md-4 -->
-                <div class="col-md-6 footer-dark-grey-box text-center">
-                   
-                    <i class="pe-7s-comment"></i>
-
-                    <h5>Social Media</h5>
-
-                    <p>See below where you can find us.</p>
-                                         
-                    <!--begin footer_social -->
-                    <ul class="footer_social">
-
-                        <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-
-                        <!-- <li><a href="#"><i class="fab fa-pinterest"></i></a></li> -->
-
-                        <li><a href="https://www.facebook.com/elonacompany/"><i class="fab fa-facebook-square"></i></a></li>
-
-                        <!-- <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
-
-                        <!-- <li><a href="#"><i class="fab fa-skype"></i></a></li> -->
-
-                        <!-- <li><a href="#"><i class="fab fa-dribble"></i></a></li> -->
-
-                    </ul>
-                    <!--end footer_social -->
-                    
-                </div>
-                <!--end col-md-4 -->
-                
-                <!--begin col-md-4 -->
-                <!-- <div class="col-md-4 footer-grey-box text-center"> -->
-                   
-                    <!-- <i class="pe-7s-link"></i> -->
-
-                    <!-- <h5>Useful Links</h5> -->
-
-                    <!-- <a href="#" class="footer-links">Our Cookies Policy</a> -->
-
-                    <!-- <a href="#" class="footer-links">Meet The Team Behind Square</a> -->
-
-                    <!-- <a href="#" class="footer-links">Terms and Conditions</a> -->
-                    
-                <!-- </div> -->
-                <!--end col-md-4 -->
-                
-            </div>
-            <!--end row -->
-            
-            <!--begin row -->
-            <div class="row">
-            
-                <!--begin col-md-12 -->
-                <div class="col-md-12 footer-bottom text-center">
-                   
-                    <p>Copyright © 2020 <strong>Elona</strong></p>
-                    
-                </div>
-                <!--end col-md-6 -->
-                
-            </div>
-            <!--end row -->
-            
-        </div>
-        <!--end container -->
-                
-    </div>
-    <!--end footer -->
-
-
-<!-- Load JS here for greater good =============================-->
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.scrollTo-min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.nav.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/custom.js"></script>
-
-
-</body>
-</html>

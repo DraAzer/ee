@@ -24,7 +24,6 @@ exclude:
   - "tools"
 
 # Multiple languages
-gems:           ['jekyll-multiple-languages']
 
 languages:          ['en', 'my']
 

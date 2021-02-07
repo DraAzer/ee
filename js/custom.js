@@ -56,71 +56,71 @@ $(window).on('load', function(){
 	/*   Newsletter                                               */
 	/* ========================================================== */
 	
-	$('.newsletter-form').each( function(){
-		var form = $(this);
-		//form.validate();
-		form.submit(function(e) {
-			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'email':$('input[name="nf_email"]').val(),
-				},function(data){
-					form.fadeOut('fast', function() {
-						$(this).siblings('p.newsletter_success_box').show();
-					});
-				});
-				e.preventDefault();
-			}
-		});
-	});		
+	// $('.newsletter-form').each( function(){
+	// 	var form = $(this);
+	// 	//form.validate();
+	// 	form.submit(function(e) {
+	// 		if (!e.isDefaultPrevented()) {
+	// 			jQuery.post(this.action,{
+	// 				'email':$('input[name="nf_email"]').val(),
+	// 			},function(data){
+	// 				form.fadeOut('fast', function() {
+	// 					$(this).siblings('p.newsletter_success_box').show();
+	// 				});
+	// 			});
+	// 			e.preventDefault();
+	// 		}
+	// 	});
+	// });		
 	
 
 	/* ========================================================== */
 	/*   Register                                                 */
 	/* ========================================================== */
 	
-	$('#register-form').each( function(){
-		var form = $(this);
-		//form.validate();
-		form.submit(function(e) {
-			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'names':$('input[name="register_names"]').val(),
-					'email':$('input[name="register_email"]').val(),
-					'phone':$('input[name="register_phone"]').val(),
-					'ticket':$('select[name="register_ticket"]').val(),
-				},function(data){
-					form.fadeOut('fast', function() {
-						$(this).siblings('p.register_success_box').show();
-					});
-				});
-				e.preventDefault();
-			}
-		});
-	})
+	// $('#register-form').each( function(){
+	// 	var form = $(this);
+	// 	//form.validate();
+	// 	form.submit(function(e) {
+	// 		if (!e.isDefaultPrevented()) {
+	// 			jQuery.post(this.action,{
+	// 				'names':$('input[name="register_names"]').val(),
+	// 				'email':$('input[name="register_email"]').val(),
+	// 				'phone':$('input[name="register_phone"]').val(),
+	// 				'ticket':$('select[name="register_ticket"]').val(),
+	// 			},function(data){
+	// 				form.fadeOut('fast', function() {
+	// 					$(this).siblings('p.register_success_box').show();
+	// 				});
+	// 			});
+	// 			e.preventDefault();
+	// 		}
+	// 	});
+	// })
 	
 	
 	/* ========================================================== */
 	/*   Contact                                                  */
 	/* ========================================================== */
-	$('#contact-form').each( function(){
-		var form = $(this);
-		//form.validate();
-		form.submit(function(e) {
-			if (!e.isDefaultPrevented()) {
-				jQuery.post(this.action,{
-					'names':$('input[name="contact_names"]').val(),
-					'email':$('input[name="contact_email"]').val(),
-					'phone':$('input[name="contact_phone"]').val(),
-					'message':$('textarea[name="contact_message"]').val(),
-				},function(data){
-					form.fadeOut('fast', function() {
-						$(this).siblings('p').show();
-					});
-				});
-				e.preventDefault();
-			}
-		});
-	})
+	// $('#contact-form').each( function(){
+	// 	var form = $(this);
+	// 	//form.validate();
+	// 	form.submit(function(e) {
+	// 		if (!e.isDefaultPrevented()) {
+	// 			jQuery.post(this.action,{
+	// 				'names':$('input[name="contact_names"]').val(),
+	// 				'email':$('input[name="contact_email"]').val(),
+	// 				'phone':$('input[name="contact_phone"]').val(),
+	// 				'message':$('textarea[name="contact_message"]').val(),
+	// 			},function(data){
+	// 				form.fadeOut('fast', function() {
+	// 					$(this).siblings('p').show();
+	// 				});
+	// 			});
+	// 			e.preventDefault();
+	// 		}
+	// 	});
+	// })
 });
 
 	/* ========================================================== */
